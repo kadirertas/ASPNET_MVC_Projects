@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Düzenle";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@model Ecommerce.Models.Entity.Product
+
+<h1>Ürünü Düzenle</h1>
+
+<h4>Ürün</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm("Edit", "Products", FormMethod.Post, new { enctype = "multipart/form-data", @class = "mt-4" }))
+        {
+            @Html.HiddenFor(m => m.ProductId) <!-- Gizli alan -->
+            <div class="form-group">
+                <label class="control-label">Ürün Adı</label>
+                @Html.TextBoxFor(m => m.ProductName, new { @class = "form-control", placeholder = "Ürün Adı", required = "required" })
+                @Html.ValidationMessageFor(m => m.ProductName, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Kısa Açıklama</label>
+                @Html.TextBoxFor(m => m.ShortDescription, new { @class = "form-control", placeholder = "Kısa Açıklama", required = "required" })
+                @Html.ValidationMessageFor(m => m.ShortDescription, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Uzun Açıklama</label>
+                @Html.TextAreaFor(m => m.LongDescription, new { @class = "form-control", placeholder = "Uzun Açıklama", required = "required" })
+                @Html.ValidationMessageFor(m => m.LongDescription, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Ürün Resmi</label>
+
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="@Model.ImageUrl" alt="Ürün Resmi" style="width:100px;height:auto;" />
+                }
+                else
+                {
+                    <span>Resim bulunamadı</span>
+                }
+                @Html.HiddenFor(m => m.ImageUrl) <!-- Gizli alan -->
+                @Html.ValidationMessageFor(m => m.ImageUrl, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Fiyat</label>
+                @Html.TextBoxFor(m => m.Price, new { @class = "form-control", placeholder = "Fiyat", required = "required" })
+                @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Adet</label>
+                @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", placeholder = "Adet", required = "required" })
+                @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Boyut</label>
+                @Html.TextBoxFor(m => m.Size, new { @class = "form-control", placeholder = "Boyut", required = "required" })
+                @Html.ValidationMessageFor(m => m.Size, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Renk</label>
+                @Html.TextBoxFor(m => m.Color, new { @class = "form-control", placeholder = "Renk", required = "required" })
+                @Html.ValidationMessageFor(m => m.Color, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Şirket Adı</label>
+                @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control", placeholder = "Şirket Adı", required = "required" })
+                @Html.ValidationMessageFor(m => m.CompanyName, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Kategori ID</label>
+                @Html.TextBoxFor(m => m.CategoryId, new { @class = "form-control", placeholder = "Kategori ID", required = "required" })
+                @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label>Oluşturulma Tarihi</label>
+                <input type="text" class="form-control" value="@Model.CreatedDate.ToString("yyyy-MM-dd HH:mm:ss")" readonly />
+                @Html.HiddenFor(m => m.CreatedDate) <!-- Gizli alan -->
+                @Html.ValidationMessageFor(m => m.CreatedDate, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-dark">Ürünü Kaydet</button>
+            </div>
+        }
+    </div>
+</div>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}

@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>EShopper</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Ücretsiz HTML Şablonları" name="keywords">
+    <meta content="Ücretsiz HTML Şablonları" name="description">
+
+    <!-- Favicon -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Kütüphane Stilleri -->
+    <link href="~/EcommercePage/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Özelleştirilmiş Bootstrap Stilleri -->
+    <link href="~/EcommercePage/css/style.css" rel="stylesheet">
+    <style>
+        .product-img {
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sayfa Başlığı Başlangıcı -->
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Mağazamız</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="/Default/Index/">Anasayfa</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0">Mağaza</p>
+            </div>
+        </div>
+    </div>
+    <!-- Sayfa Başlığı Sonu -->
+    <!-- Mağaza Başlangıcı -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5">
+            <!-- Mağaza Kenar Çubuğu Başlangıcı -->
+            <div class="col-lg-3 col-md-12">
+                <!-- Fiyat Başlangıcı -->
+                <!-- Fiyata Göre Filtreleme Başlangıcı -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Fiyata Göre Filtrele</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="price-all">
+                            <label class="custom-control-label" for="price-all">Tüm Fiyatlar</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-1">
+                            <label class="custom-control-label" for="price-1">0 TL - 100 TL</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-2">
+                            <label class="custom-control-label" for="price-2">100 TL - 200 TL</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-3">
+                            <label class="custom-control-label" for="price-3">200 TL - 300 TL</label>
+                            <span class="badge border font-weight-normal">246</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-4">
+                            <label class="custom-control-label" for="price-4">300 TL - 400 TL</label>
+                            <span class="badge border font-weight-normal">145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="price-5">
+                            <label class="custom-control-label" for="price-5">400 TL - 500 TL</label>
+                            <span class="badge border font-weight-normal">168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Fiyata Göre Filtreleme Sonu -->
+                <!-- Fiyat Sonu -->
+                <!-- Renge Göre Filtreleme Başlangıcı -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Renge Göre Filtrele</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="color-all">
+                            <label class="custom-control-label" for="color-all">Tüm Renkler</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-1">
+                            <label class="custom-control-label" for="color-1">Siyah</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-2">
+                            <label class="custom-control-label" for="color-2">Beyaz</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <!-- Diğer renk seçeneklerini buraya ekleyebilirsiniz -->
+                    </form>
+                </div>
+                <!-- Renge Göre Filtreleme Sonu -->
+                <!-- Bedenine Göre Filtreleme Başlangıcı -->
+                <div class="mb-5">
+                    <h5 class="font-weight-semi-bold mb-4">Bedenine Göre Filtrele</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="size-all">
+                            <label class="custom-control-label" for="size-all">Tüm Bedenler</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-1">
+                            <label class="custom-control-label" for="size-1">XS</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-2">
+                            <label class="custom-control-label" for="size-2">S</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <!-- Diğer beden seçeneklerini buraya ekleyebilirsiniz -->
+                    </form>
+                </div>
+                <!-- Bedenine Göre Filtreleme Sonu -->
+
+            </div>
+            <!-- Mağaza Kenar Çubuğu Sonu -->
+            <!-- Mağaza Ürünleri Başlangıcı -->
+            <div class="col-lg-9 col-md-12">
+                <div class="row pb-3">
+                    <div class="col-12 pb-1">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                      
+                            <div class="dropdown ml-4">
+                                <button class="btn border dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                    Sırala
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">En Yeniler</a>
+                                    <a class="dropdown-item" href="#">Popülerlik</a>
+                                    <a class="dropdown-item" href="#">En İyi Değerlendirme</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @foreach (var product in Model)
+                    {
+                        <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                            <div class="card product-item border-0 mb-4">
+                                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                    <img class="img-fluid" src="@Url.Content(product.ImageUrl)" alt="">
+                                </div>
+                                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                    <h6 class="text-truncate mb-3">@product.ProductName</h6>
+                                    <div class="d-flex justify-content-center">
+                                        <h6>@product.Price.ToString("C")</h6>
+                                        <h6 class="text-muted ml-2"><del>@product.Price.ToString("C")</del></h6>
+                                    </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between bg-light border">
+                                    <a href="@Url.Action("Index", "ShopDetails", new { id = product.ProductId })" class="btn btn-sm text-dark p-0">
+                                        <i class="fas fa-eye text-primary mr-1"></i>Detaylı Görüntüle
+                                    </a>
+                                    <form method="post" asp-action="AddToCart" asp-controller="ShopingCart">
+                                        <input type="hidden" name="productId" value="@product.ProductId" />
+                                        <button type="submit" class="btn btn-sm text-dark p-0">
+                                            <i class="fas fa-shopping-cart text-primary mr-1"></i>Sepete Ekle
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+
+                </div>
+            </div>
+            <!-- Mağaza Ürünleri Sonu -->
+        </div>
+    </div>
+    <!-- Mağaza Sonu -->
+    <!-- JavaScript Kütüphaneleri -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="~/EcommercePage/lib/easing/easing.min.js"></script>
+    <script src="~/EcommercePage/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- İletişim Javascript Dosyası -->
+    <script src="~/EcommercePage/mail/jqBootstrapValidation.min.js"></script>
+    <script src="~/EcommercePage/mail/contact.js"></script>
+
+    <!-- Şablon Javascript -->
+    <script src="~/EcommercePage/js/main.js"></script>
+</body>
+
+</html>

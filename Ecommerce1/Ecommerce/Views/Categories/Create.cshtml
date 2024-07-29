@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@model Ecommerce.Models.Entity.Category
+
+<h1>Kategori Oluştur </h1>
+
+<h4>Kategori</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm("Create", "Categories", FormMethod.Post, new { enctype = "multipart/form-data", @class = "mt-4" }))
+        {
+            <div class="form-group">
+                <label for="categoryName">Kategori İsmi</label>
+                @Html.TextBoxFor(m => m.CategoryName, new { @class = "form-control", placeholder = "Kategori İsmi", required = "required" })
+            </div>
+
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label for="categoryImage">Kategori Resmi</label>
+                    <input class="form-control" type="file" name="categoryImage" id="categoryImage" accept=".png" required>
+                    <small class="form-text text-muted">Lütfen bir PNG dosyası seçin.</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="isActive">Şu An Aktif mi?</label>
+                @Html.DropDownListFor(m => m.IsActive, new SelectList(new[]
+                         {
+            new SelectListItem { Value = "true", Text = "Kategori Aktif" },
+            new SelectListItem { Value = "false", Text = "Kategori Aktif Değil" }
+            }, "Value", "Text"), new { @class = "form-control", required = "required" })
+            </div>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-dark">Kategori Oluştur</button>
+            </div>
+        }
+    </div>
+</div>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}

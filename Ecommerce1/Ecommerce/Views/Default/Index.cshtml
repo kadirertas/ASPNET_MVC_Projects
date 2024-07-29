@@ -1,0 +1,137 @@
+﻿@model List<Ecommerce.Models.Entity.Category>
+@{
+    ViewData["Title"] = "Index";
+  
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>EShopper</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Ücretsiz HTML Şablonları" name="keywords">
+    <meta content="Ücretsiz HTML Şablonları" name="description">
+
+    <!-- Favicon -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Kütüphane Stilleri -->
+    <link href="~/EcommercePage/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Özelleştirilmiş Bootstrap Stilleri -->
+    <link href="~/EcommercePage/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Öne Çıkanlar Başlangıç -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Kaliteli Ürün</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Ücretsiz Kargo</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">14 Gün İade</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">7/24 Destek</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Öne Çıkanlar Sonu -->
+    <!-- Kategoriler Başlangıç -->
+    <style>
+        .cat-item-wrapper:hover {
+            transform: scale(1.2);
+            border-radius: 20px;
+        }
+    </style>
+
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            @foreach (var category in Model)
+            {
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <a href="@Url.Action("Category", "Shop", new { categoryId = category.CategoryId})" class="cat-img position-relative overflow-hidden mb-3" style="height: 100%; display: block;">
+                        <div class="cat-item-wrapper" style="transition: transform 0.3s ease;">
+                            <div class="cat-item d-flex flex-column border mb-4 position-relative" style="padding: 10px;border-radius: 20px; height: 300px; background-color: #D19C97; background-image: url('@category.CategoryImageUrl'); background-size: cover; background-position: center;">
+                                <h5 class="font-weight-semi-bold m-0 position-absolute bottom-0 start-50 translate-middle-x" style="z-index: 1; background-color: #F9F9F9; padding: 10px; border-radius: 10px;">
+                                    @category.CategoryName
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Kategoriler Sonu -->
+    <!-- Teklif Başlangıç -->
+    <div class="container-fluid offer pt-5">
+        <div class="row px-xl-5">
+            <div class="col-md-6 pb-4">
+                <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
+                    <img src="~/EcommercePage/img/offer-1.png" alt="">
+                    <div class="position-relative" style="z-index: 1;">
+                        <h5 class="text-uppercase text-primary mb-3">Tüm siparişlerde %20 indirim</h5>
+                        <h1 class="mb-4 font-weight-semi-bold">Bahar Koleksiyonu</h1>
+                        <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Şimdi Alışveriş Yap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pb-4">
+                <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
+                    <img src="~/EcommercePage/img/offer-2.png" alt="">
+                    <div class="position-relative" style="z-index: 1;">
+                        <h5 class="text-uppercase text-primary mb-3">Tüm siparişlerde %20 indirim</h5>
+                        <h1 class="mb-4 font-weight-semi-bold">Kış Koleksiyonu</h1>
+                        <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Şimdi Alışveriş Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Offer End -->
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="~/EcommercePage/lib/easing/easing.min.js"></script>
+        <script src="~/EcommercePage/lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="~/EcommercePage/mail/jqBootstrapValidation.min.js"></script>
+        <script src="~/EcommercePage/mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="~/EcommercePage/js/main.js"></script>
+</body>
+
+</html>

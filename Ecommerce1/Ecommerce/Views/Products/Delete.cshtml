@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Sil";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@model Ecommerce.Models.Entity.Product
+
+<h1>Ürünü Sil</h1>
+
+<h3>Bunu silmek istediğinizden emin misiniz?</h3>
+<div>
+    <h4>Ürün</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Ürün Adı
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt class="col-sm-2">
+            Kısa Açıklama
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ShortDescription)
+        </dd>
+        <dt class="col-sm-2">
+            Uzun Açıklama
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LongDescription)
+        </dd>
+        <dt class="col-sm-2">
+            Ürün Resmi
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Model.ImageUrl" alt="Ürün Resmi" style="width:100px;height:auto;" />
+        </dd>
+        <dt class="col-sm-2">
+            Fiyat
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            Adet
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+        <dt class="col-sm-2">
+            Boyut
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+        <dt class="col-sm-2">
+            Renk
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt class="col-sm-2">
+            Şirket Adı
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+        <dt class="col-sm-2">
+            Kategori ID
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+        <dt class="col-sm-2">
+            Oluşturulma Tarihi
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="ProductId" />
+        <input type="submit" value="Ürünü Sil" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+    </form>
+</div>

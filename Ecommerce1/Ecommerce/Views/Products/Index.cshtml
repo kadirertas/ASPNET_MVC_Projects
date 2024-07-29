@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Ürün Listesi";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+@model IEnumerable<Ecommerce.Models.Entity.Product>
+
+<h1>Ürün Listesi</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Ürün Oluştur</a>
+</p>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Henüz ürün bulunmamaktadır.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Ürün Adı
+                </th>
+                <th>
+                    Resim
+                </th>
+                <th>
+                    Fiyat
+                </th>
+                <th>
+                    Kısa Açıklama
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        <img src="@item.ImageUrl" alt="Ürün Resmi" style="width:100px;height:auto;" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ShortDescription)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-primary">Güncelle</a>
+                        <a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-danger">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

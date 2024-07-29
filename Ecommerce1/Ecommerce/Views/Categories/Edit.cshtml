@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@model Ecommerce.Models.Entity.Category
+
+<h1>Kategori Günceleme</h1>
+
+<h4>Kategori</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm("Edit", "Categories", FormMethod.Post, new { enctype = "multipart/form-data", @class = "mt-4" }))
+        {
+            @Html.HiddenFor(m => m.CategoryId) <!-- Gizli alan -->
+
+            <div class="form-group">
+                <label for="categoryName">Kategori İsmi</label>
+                @Html.TextBoxFor(m => m.CategoryName, new { @class = "form-control", placeholder = "Kategori İsmi", required = "required" })
+            </div>
+
+            <div class="form-group">
+                <label for="createdDate">Tarih</label>
+                <input type="text" id="createdDate" class="form-control" value="@Model.CreatedDate.ToString("yyyy-MM-dd HH:mm:ss")" readonly />
+                @Html.HiddenFor(m => m.CreatedDate) <!-- Gizli alan -->
+            </div>
+
+            <div class="form-group">
+                <label for="categoryImage">Kategori Resmi</label><br />
+                @if (!string.IsNullOrEmpty(Model.CategoryImageUrl))
+                {
+                    <img src="@Model.CategoryImageUrl" alt="Kategori Resmi" width="200" />
+                }
+                else
+                {
+                    <span>Resim mevcut değil</span>
+                }
+                <!-- Hidden input field for storing the current image URL -->
+                @Html.HiddenFor(m => m.CategoryImageUrl)
+            </div>
+
+            <div class="form-group">
+                <label for="isActive">Şu An Aktif mi?</label>
+                @Html.DropDownListFor(m => m.IsActive, new SelectList(new[]
+                         {
+            new SelectListItem { Value = "true", Text = "Aktif Kategori" },
+            new SelectListItem { Value = "false", Text = "Pasif Kategori" }
+            }, "Value", "Text"), new { @class = "form-control", required = "required" })
+            </div>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-dark">Kategoriyi Kaydet</button>
+            </div>
+        }
+    </div>
+</div>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}

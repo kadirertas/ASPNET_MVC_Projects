@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+@model IEnumerable<Ecommerce.Models.Entity.Category>
+
+<h1>Kategori Listesi</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Kategori Oluştur</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Kategori İsmi
+            </th>
+            <th>
+                Kategori Resmi
+            </th>
+            <th>
+                Şu An Aktif mi?
+            </th>
+            <th>
+                Tarih
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    <img src="@item.CategoryImageUrl" alt="Category Image" style="width:100px;height:auto;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CategoryId" class="btn btn-primary">Güncelle</a>
+                    <a asp-action="Delete" asp-route-id="@item.CategoryId" class="btn btn-danger">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
