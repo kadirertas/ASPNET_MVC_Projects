@@ -1,0 +1,15 @@
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.AssemblyInfoInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.AssemblyInfo.cs
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.csproj.CoreCompileInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.sourcelink.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\bin\Debug\net8.0\ClassMetodsDemo.exe
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\bin\Debug\net8.0\ClassMetodsDemo.deps.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\bin\Debug\net8.0\ClassMetodsDemo.runtimeconfig.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\bin\Debug\net8.0\ClassMetodsDemo.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\bin\Debug\net8.0\ClassMetodsDemo.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\refint\ClassMetodsDemo.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ClassMetodsDemo.genruntimeconfig.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\ClassMetodsDemo\obj\Debug\net8.0\ref\ClassMetodsDemo.dll

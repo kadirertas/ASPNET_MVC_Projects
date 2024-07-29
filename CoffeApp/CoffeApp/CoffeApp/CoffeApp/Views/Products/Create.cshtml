@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@model CoffeApp.Models.Entity.Products
+
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Create Product</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="/">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Create</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <div class="container pt-5">
+        <h2>Create New Product</h2>
+
+        <form asp-action="Create" enctype="multipart/form-data" onsubmit="checkDescription()">
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId" class="form-control">
+                    @if (ViewBag.CategoryList != null )
+                    {
+                        foreach (var item in ViewBag.CategoryList as SelectList)
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    }
+
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label">Product Name</label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label">Price</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductImageUrl" class="control-label">Product Image</label>
+                <input asp-for="ProductImageUrl" class="form-control" type="file" accept=".png" />
+                <span asp-validation-for="ProductImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label">Description</label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkDescription() {
+            var descriptionInput = document.querySelector('[name="Description"]');
+            if (descriptionInput && descriptionInput.value.trim() === '') {
+                descriptionInput.value = 'Açıklama Yok';
+            }
+        }
+    </script>
+
+</body>
+</html>

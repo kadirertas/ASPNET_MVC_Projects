@@ -1,0 +1,15 @@
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\bin\Debug\net8.0\DegerVeReferansTip.exe
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\bin\Debug\net8.0\DegerVeReferansTip.deps.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\bin\Debug\net8.0\DegerVeReferansTip.runtimeconfig.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\bin\Debug\net8.0\DegerVeReferansTip.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\bin\Debug\net8.0\DegerVeReferansTip.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.AssemblyInfoInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.AssemblyInfo.cs
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.csproj.CoreCompileInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.sourcelink.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\refint\DegerVeReferansTip.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\DegerVeReferansTip.genruntimeconfig.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\DegerVeReferansTip\obj\Debug\net8.0\ref\DegerVeReferansTip.dll

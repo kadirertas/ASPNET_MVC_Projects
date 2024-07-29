@@ -1,0 +1,15 @@
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\bin\Debug\net8.0\Metotlar.exe
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\bin\Debug\net8.0\Metotlar.deps.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\bin\Debug\net8.0\Metotlar.runtimeconfig.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\bin\Debug\net8.0\Metotlar.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\bin\Debug\net8.0\Metotlar.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.AssemblyInfoInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.AssemblyInfo.cs
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.csproj.CoreCompileInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.sourcelink.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\refint\Metotlar.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\Metotlar.genruntimeconfig.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\Metotlar\obj\Debug\net8.0\ref\Metotlar.dll

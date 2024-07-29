@@ -1,0 +1,15 @@
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\bin\Debug\net8.0\KampIntro.exe
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\bin\Debug\net8.0\KampIntro.deps.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\bin\Debug\net8.0\KampIntro.runtimeconfig.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\bin\Debug\net8.0\KampIntro.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\bin\Debug\net8.0\KampIntro.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.AssemblyInfoInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.AssemblyInfo.cs
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.csproj.CoreCompileInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.sourcelink.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\refint\KampIntro.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\KampIntro.genruntimeconfig.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\KampIntro\obj\Debug\net8.0\ref\KampIntro.dll
