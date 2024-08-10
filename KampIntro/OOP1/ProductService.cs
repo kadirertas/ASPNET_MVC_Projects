@@ -13,10 +13,17 @@ namespace OOP1
         public void Add (Product product) 
         {
 
-            Console.WriteLine( product.ProductName+ " Ürünü sisteme Eklendi "); 
+            Console.WriteLine( product.ProductName+ " Ürünü " + product.UnitsInStock + " adet olarak sisteme Eklendi "); 
 
 
         
+        }
+
+
+        public void Update (Product product)
+        {
+
+            Console.WriteLine(product.ProductName + " Ürünü Güncellendi ");  
         }
     }
 }

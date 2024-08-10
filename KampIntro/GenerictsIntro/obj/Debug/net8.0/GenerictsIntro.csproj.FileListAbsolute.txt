@@ -1,0 +1,15 @@
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\bin\Debug\net8.0\GenerictsIntro.exe
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\bin\Debug\net8.0\GenerictsIntro.deps.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\bin\Debug\net8.0\GenerictsIntro.runtimeconfig.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\bin\Debug\net8.0\GenerictsIntro.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\bin\Debug\net8.0\GenerictsIntro.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.AssemblyInfoInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.AssemblyInfo.cs
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.csproj.CoreCompileInputs.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.sourcelink.json
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\refint\GenerictsIntro.dll
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.pdb
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\GenerictsIntro.genruntimeconfig.cache
+C:\Users\kadir\OneDrive\Documents\DOSYALAR\Yazilim_Gelistirici_Yetistirme\KampIntro\GenerictsIntro\obj\Debug\net8.0\ref\GenerictsIntro.dll

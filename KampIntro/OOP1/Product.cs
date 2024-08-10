@@ -14,7 +14,7 @@ namespace OOP1
         public int CategoryId { get; set; }
 
         public string ProductName { get; internal set; }
-        public     bool UnitsInStock { get; set; }
+        public     int UnitsInStock { get; set; }
 
         public double UnitPrice { get; set; }
 

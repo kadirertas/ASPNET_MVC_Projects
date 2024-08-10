@@ -8,13 +8,15 @@ product.Id = 1;
 product.CategoryId = 1;
 product.ProductName = "Helva";
 product.UnitPrice = 0;
-product.UnitsInStock = false;
+product.UnitsInStock = 20;
 
 
-Product product1 = new Product { Id = 2, CategoryId = 1, ProductName = "Kiraz", UnitPrice = 40, UnitsInStock = true };
+Product product1 = new Product { Id = 2, CategoryId = 1, ProductName = "Kiraz", UnitPrice = 40, UnitsInStock = 45 };
 
 ProductService productService = new ProductService();
-productService.Add(product);    productService.Add(product1);
+productService.Add(product);   
+productService.Add(product1);
 
-
+productService.Update(product);
+productService.Update(product1);
 
